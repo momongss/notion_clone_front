@@ -1,0 +1,125 @@
+:root {
+  --nav-element-color: rgba(255, 255, 255, 0.6);
+  --nav-docs_nav-padding: 4px;
+  --nav-icon-padding: 10px;
+  --main-element-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--nav-element-color);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(47, 52, 55);
+}
+
+.header_nav {
+  flex: 0 0 225px;
+  background-color: #373c3f;
+  padding: 0 15px 0 15px;
+  color: var(--nav-element-color);
+  font-size: 0.88rem;
+}
+
+.header_nav > .account {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 15px 0;
+}
+
+.header_nav > .account > span {
+  padding-right: 10px;
+  color: white;
+}
+
+.header_nav > .account > i {
+  color: var(--nav-element-color);
+}
+
+.header_nav > .account > #sidebar_icon {
+  padding-left: 70px;
+}
+
+.header_nav > .account > img {
+  width: 17px;
+  border-radius: 10%;
+  padding-right: 10px;
+}
+
+.settings > li {
+  padding: 3px 0 3px 0;
+}
+
+.settings > li > span {
+  padding-left: 10px;
+}
+
+.docs_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.docs_nav > .favorites {
+  padding-top: 30px;
+}
+
+.docs_nav > .private {
+  padding-top: 24px;
+}
+
+.docs_nav > li > span {
+  display: inline-block;
+  padding-bottom: var(--nav-docs_nav-padding);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.docs_nav > li > ul > li {
+  padding: var(--nav-docs_nav-padding) 0 var(--nav-docs_nav-padding) 0;
+}
+
+.docs_nav > li > ul > li > i {
+  padding: 0 var(--nav-icon-padding) 0 var(--nav-icon-padding);
+}
+
+.menu {
+  padding-top: 20px;
+}
+
+.menu > li {
+  padding-bottom: 10px;
+}
+
+.menu > li > i {
+  padding: 0 var(--nav-icon-padding) 0 0;
+}
+
+.new_page_button {
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  bottom: 16px;
+}
+
+.new_page_button > i {
+  padding: 0 var(--nav-icon-padding) 0 0;
+}
+
+.main_wrapper {
+  flex: 1;
+  padding: 10px;
+}
+
+#title_icon {
+  width: 15px;
+}
